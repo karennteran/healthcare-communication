@@ -1,0 +1,260 @@
+
+/* Healthcare Communication Website */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f9fb;
+    color: #243746;
+    line-height: 1.7;
+}
+
+header {
+    background-color: #12344a;
+    color: white;
+    text-align: center;
+    padding: 70px 25px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    color: #8ce0dc;
+    font-size: 23px;
+    font-weight: normal;
+}
+
+main {
+    max-width: 900px;
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 35px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+}
+
+section h2 {
+    color: #137c87;
+}
+
+p {
+    font-size: 17px;
+}
+
+/* Navigation Menu */
+
+nav {
+    background-color: #176b78;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background-color: #12344a;
+}
+
+
+/* Spacing between research sections */
+
+main section {
+    margin-bottom: 30px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+footer {
+    background-color: #12344a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.communication-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.communication-card {
+    padding: 24px;
+    border-radius: 12px;
+    border: 1px solid #dce7eb;
+}
+
+.professional-card {
+    background-color: #e6f3f6;
+}
+
+.patient-card {
+    background-color: #e8f5ef;
+}
+
+.communication-card h4 {
+    color: #12344a;
+    font-size: 19px;
+    margin-top: 0;
+}
+
+.communication-card p {
+    font-size: 15px;
+}
+
+@media (max-width: 650px) {
+    .communication-comparison {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.ehr-example {
+    background-color: #f0f7fa;
+    border: 1px solid #c8dce5;
+    border-radius: 12px;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+.ehr-example h4 {
+    color: #12344a;
+    font-size: 21px;
+    margin-top: 0;
+}
+
+.ehr-label {
+    color: #667b88;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.ehr-example table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.ehr-example th,
+.ehr-example td {
+    border: 1px solid #c8dce5;
+    padding: 12px;
+    text-align: left;
+}
+
+.ehr-example th {
+    background-color: #176b78;
+    color: white;
+}
+
+.ehr-example td {
+    background-color: white;
+}
+
+.ehr-note {
+    background-color: #e2eff3;
+    padding: 18px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+@media (max-width: 650px) {
+    .ehr-example {
+        padding: 12px;
+    }
+
+    .ehr-example th,
+    .ehr-example td {
+        padding: 8px;
+        font-size: 13px;
+        overflow-wrap: anywhere;
+    }
+}
+
+
+.thesis-statement {
+    background-color: #e6f3f6;
+    border-left: 5px solid #137c87;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+
+/* APA 7 References */
+
+.reference {
+    margin-bottom: 35px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dce7eb;
+}
+
+.reference > p:first-child {
+    padding-left: 36px;
+    text-indent: -36px;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+.reference a {
+    color: #137c87;
+    text-decoration: underline;
+}
+
+.reference a:hover {
+    color: #12344a;
+}
+
+.reference > p:nth-child(2) {
+    background-color: #f4f9fb;
+    padding: 18px;
+    border-radius: 8px;
+    line-height: 1.7;
+}
+
+
+/* Mobile readability improvements */
+
+@media (max-width: 650px) {
+    section {
+        padding: 20px;
+    }
+
+    header {
+        padding: 45px 20px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    header h2 {
+        font-size: 19px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+}
+
